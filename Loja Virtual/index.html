@@ -28,9 +28,7 @@
             <div class="header-button-side">
                 <div class="header-button-side-left">
                     <h2>Texto</h2>
-                    <p>
-                        Os melhores preços da região
-                    </p>
+                    <p>Os melhores preços da região</p>
                     <button>Ver Agora &#8594;</button>
                 </div>
                 <div class="header-button-side-right">
@@ -39,6 +37,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <div class="gray-background">
             <div class="page-inner-content">
@@ -82,7 +81,78 @@
                 </div>
             </div>
         </div>
+        <!-- Formulário de Login -->
+        <div class="auth-forms">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="login.php" method="post">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+
+            <!-- Formulário de Cadastro -->
+            <div class="register-form">
+                <h2>Cadastro</h2>
+                <form action="register.php" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Seção de Pedidos -->
+        <div class="order-section">
+            <h2>Seus Pedidos</h2>
+            <div class="order-list">
+                <div class="order-item">
+                    <h3>Pedido #12345</h3>
+                    <p>Data: 03/12/2024</p>
+                    <p>Status: Em Processamento</p>
+                </div>
+                <div class="order-item">
+                    <h3>Pedido #12344</h3>
+                    <p>Data: 02/12/2024</p>
+                    <p>Status: Enviado</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Produtos -->
+        <div class="product-section">
+            <h2>Cadastro de Produto</h2>
+            <form action="add_product.php" method="post">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" name="product-name" required>
+                <label for="product-price">Preço:</label>
+                <input type="text" id="product-price" name="product-price" required>
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </div>
+
+        <div class="product-list-section">
+            <h2>Lista de Produtos</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <h3>Produto 1</h3>
+                    <p>Preço: R$100</p>
+                </div>
+                <div class="product-item">
+                    <h3>Produto 2</h3>
+                    <p>Preço: R$150</p>
+                </div>
+            </div>
+        </div>
     </main>
+
     <script>
         const navbar = document.querySelector(".navbar");
         const menuButton = document.querySelector(".menu-button");
