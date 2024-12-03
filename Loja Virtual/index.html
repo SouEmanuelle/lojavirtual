@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="navbar show-menu">
+        <div class="header-inner-content show-menu"></div>
+        <h1 class="logo">E<span>-COMMERCE</span></h1>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Cadastro</li>
+                <li>Conta</li>
+            </ul>
+        </nav>
+        <div class="nav-icon-container">
+            <img src="imagens/carrinhoicon2.png" class="menu-button" alt="Menu Icon">
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-button-side">
+                <div class="header-button-side-left">
+                    <h2>Texto</h2>
+                    <p>
+                        Os melhores preços da região
+                    </p>
+                    <button>Ver Agora &#8594;</button>
+                </div>
+                <div class="header-button-side-right">
+                    <img src="imagens/imagem4.jpg" alt="Imagem do produto">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <div class="cols cols-3">
+                    <img src="imagens/Imagem3.png" alt="imagem3">
+                    <img src="imagens/Imagem3.png" alt="">
+                    <img src="imagens/Imagem3.png" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="page-inner-content">
+                <h3 class="section-title">Produtos Selecionados</h3>
+                <div class="subtitle-underline"></div>
+                <div class="cols cols-4">
+                    <div class="product">
+                        <img src="imagens/Imagem3.png" alt="Produto 1">
+                        <p class="nome-produto">Nome do Produto</p>
+                        <p class="rate">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        <p class="product-price">Preço: R$xxxx</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/Imagem3.png" alt="Produto 2">
+                        <p class="nome-produto">Produto</p>
+                        <p class="rate">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        <p class="product-price">Preço: R$xxxx</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/Imagem3.png" alt="Produto 3">
+                        <p class="nome-produto">Nome do Produto</p>
+                        <p class="rate">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        <p class="product-price">Preço: R$xxxx</p>
+                    </div>
+                    <div class="product">
+                        <img src="imagens/Imagem3.png" alt="Produto 4">
+                        <p class="nome-produto">Nome do Produto</p>
+                        <p class="rate">&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                        <p class="product-price">Preço: R$xxxx</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener('click', () => {
+            navbar.classList.toggle('show-menu');
+        });
+    </script>
+</body>
+</html>
